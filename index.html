@@ -1,1 +1,407 @@
-hello
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+  <title>Abishek Gyawali Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="/images/AG.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6176911f6a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <script src="script.js"></script>
+<div id ="header">
+      <div class="container">
+        <nav>
+            <img src ="images/logo.png" class="logo">
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">My Design Process</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I am <span>Abishek Gyawali</span> an aspiring UI / UX designer with a passion for creativity and innovation. Join me on this creative journey as we shape the future with user-centric experiences. </h1>
+        </div>
+      </div>
+</div>
+<!----------------------ABOUT---------------- -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/user.png">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <br>
+        <p><font size ="4">Hello, I'm Abishek, a California-based UX Designer with a passion for crafting exceptional digital experiences. My
+        journey includes honing my skills through Google's prestigious UX program, giving me expertise in illustrations, user
+        flows, wireframes, and more. I'm well-versed in design principles and proficient in tools like Figma, InDesign, Sketch,
+        and InVision. 
+        <br>
+        <br>
+        
+        My mission is simple: create innovative projects that weave compelling narratives while prioritizing the user. I value
+        teamwork, authenticity, and continual growth. Let's collaborate to make a meaningful impact through human-centered
+        design. Join me on this creative journey as we shape the future with user-centric experiences. No corporate jargon
+        here—just good design that resonates with people. 
+        <br>
+        <br>
+        My past experience lends me the ability to communicate effectively across multiple divisions and collaborate efficiently
+        in an agile working environment. That's why I would love to work with the next product team to design solutions that we
+        are all proud of. </font></p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('tools')">Tools</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Research</span><br>Conducting User Research, Surverys, Interviews, Usability Testing</li>
+            <li><span>Information Architecture</span><br>Structuring and organizing content, ensuring local navigation</li>
+            <li><span>Wireframing and Prototyping</span><br>Creating Interactve Prototypes and Wireframes to visualize and iterate design concepts</li>
+            <li><span>Interaction Design (IxD)</span><br>Designing interactive elements and microinteractions that enhance functionality</li>
+            <li><span>Visual Communication</span><br>Conveyance of information through visual elements like images, graphics and design</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>June 2021 - July 20222</span><br>UI / UX Designer at Jackson's Hardware Inc</li>
+            <li><span>March 2018 - Dec 2020</span><br>MultiMedia Designer at Lincoln University Oakland</li>
+            <li><span>Dec 2021 - Present</span><br>Co-Founder and CEO at Nepali Things LLC</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2020 </span><br>MBA in Marketing From Lincoln University</li>
+            <li><span>2023</span><br>Google UX Design Certification</li>
+            <li><span>2020</span><br>Digital Marketing NanoDegree</li>
+            <li><span>2020</span><br>Python for Everybody Specialization</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="tools">
+          <ul>
+            <li><span>Figma </span><br>Best for Prototyping</li>
+            <li><span>Adobe XD</span><br>Initial Concept for Digital Products</li>
+            <li><span>Sketch</span><br>Best for its ease and robust features</li>
+            <li><span>Overflow</span><br>Best for Flowcharts</li>
+            <li><span>UXCam</span><br>Best for User Testing</li>
+            <li><span>Balsamiq</span><br>Best for Wireframing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----------my design process-------------- -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Design Process</h1>
+    <div class="services-list">
+      <div>
+        <i class="fas fa-1"></i>
+        <h2>Define the Requirements</h2>
+        <p>I kick things off by pinpointing the project's core business needs, nailing down requirements, and getting a grasp of
+        the desired outcomes, timelines, and team expectations. Keeping the lines of communication open with the team is
+        paramount. At this stage, I also begin sketching out initial thoughts on the puzzle we're about to solve.</p>
+        <!-- <a href="#">Learn More</a> -->
+      </div>
+      <div>
+        <i class="fas fa-2"></i>
+        <h2>Discover the Issues</h2>
+        <p>This is where I dive deep, collecting intel, engaging in discussions, and delving into the intricacies of the problem at
+        hand. I might sift through user feedback or investigate why the current design is the way it is. If we're short on
+        budget or time for a full-blown user research expedition, I'll go for informal interviews to avoid shooting in the dark.</p>
+        <!-- <a href="#">Learn More</a> -->
+      </div>
+      <div>
+        <i class="fas fa-3"></i>
+        <h2>Interpret the Results</h2>
+        <p>The decoding phase is when I define who our users are, what makes them tick, and where it hurts. I craft personas, chart
+        journey maps, sketch out storyboards, and whip up problem statements or refine existing ones. This is also the stage
+        where we set our project goals and the metrics we'll use to measure success. It's often an eye-opening journey.</p>
+        <!-- <a href="#">Learn More</a> -->
+      </div>
+      <div>
+        <i class="fas fa-4"></i>
+        <h2>Ideate over Solutions</h2>
+        <p>The ideation phase – my personal playground. I get everyone in on the brainstorming action: developers, fellow
+        designers, stakeholders, even the friendly neighborhood customer support team. We let the ideas flow freely, aiming for
+        quantity over quality at this stage</p>
+        <!-- <a href="#">Learn More</a> -->
+      </div>
+      <div>
+        <i class="fas fa-5"></i>
+        <h2>Prototype</h2>
+        <p>Now, it's time to give shape to those brilliant ideas. I create an interactive prototype, whether it's a snazzy
+        high-fidelity Figma masterpiece or a functional website, depending on the project's rhythm and testing needs.</p>
+        <!-- <a href="#">Learn More</a> -->
+      </div>
+      <div>
+        <i class="fas fa-6"></i>
+        <h2>Test, Iterate and Test Again</h2>
+        <p>In the final stretch, I put our prototype to the test with real users. Sometimes it's a swift, informal check, while
+        other times it's a full-blown usability testing extravaganza. The results serve as our guiding light, showing us what
+        needs fine-tuning and enhancing. It's all about iterating to perfection..</p>
+        <!-- <a href="#">Learn More</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---------------portfolio---------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work" onclick="openPopup(0)">
+          <img src="images/project1.png">
+          <div class="layer">
+            <h3>Web Design</h3>
+            <p>Website Design for an Event Management Company</p>
+          </div>
+        </div>
+        <div class="work" onclick="openPopup(1)">
+          <img src="images/Jacksons Design.png">
+          <div class="layer">
+            <h3>Jackson’s Hardware Website Redesign</h3>
+            <p>The primary goal was to make the website easy to understand, and navigate, and provide a positive user experience.</p>
+          </div>
+        </div>
+        <div class="work" onclick="openPopup(2)">
+          <img src="images/nepalithings.png">
+          <div class="layer">
+            <h3>A ticketing solution for movie lovers</h3>
+            <p>This movie ticketing app provides an intuitive user experience for purchasing tickets. With a clean, minimal interface,
+            the app puts the focus on finding and buying tickets easily.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work" onclick="openPopup(3)">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>E-commerce</h3>
+            <p>This app allows you to buy something online with ease.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <!-- Add more projects here -->
+      </div>
+      <a href="#" class="btn" >See More</a>
+    </div>
+  </div>
+ 
+
+
+<!---------------Blog---------------- -->
+
+<div id="blog">
+  <div class="container">
+    <h1 class="sub-title">Blog</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/mobilevsweb.png">
+        <div class="layer">
+          <h3>Mobile Application Vs Website</h3>
+          <p>Despite functional similarities, the mobile application and website have notable differences.</p>
+          <a href="https://medium.com/@abishekgyawali04/mobile-application-vs-website-641666ad295c"
+            target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/uxandtechnical.png">
+        <div class="layer">
+          <h3>Balancing Creativity and Technical Constraints in UX Design</h3>
+          <p>Balancing creativity and technical constraints in UX designs is an ongoing journey. It is a challenging but essential
+          part of creating effective user experiences</p>
+          <a href="https://medium.com/@abishekgyawali04/balancing-creativity-and-technical-constraints-in-ux-design-f77314ec0bfa"
+            target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/appke.png">
+        <div class="layer">
+          <h3>What makes Apple’s UI/UX the most appealing to a majority of people?</h3>
+          <p>Apple’s user-centric philosophy and dedication to simplicity, aesthetics, and seamless user experiences make their UI/UX
+          highly appealing to mainstream consumers.</p>
+          <a href="https://medium.com/@abishekgyawali04/what-makes-apples-ui-ux-the-most-appealing-to-a-majority-of-people-eaec0612d01e" target="_blank"><i
+              class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/bias.png">
+        <div class="layer">
+          <h3>How to reduce bias in interviews?</h3>
+          <p>Taking deliberate steps to overcome biases will make your research findings more accurate and actionable.</p>
+          <a href="https://medium.com/@abishekgyawali04/how-to-reduce-bias-in-interviews-c52b64d6721c" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/human.png">
+        <div class="layer">
+          <h3>What if I was a Human Interface Designer at Apple?</h3>
+          <p>I have been a big fan of Apple since Apple launched its first product Apple I microcomputer in Steve Jobs’s Family
+          Garage</p>
+          <a href="https://medium.com/@abishekgyawali04/what-if-i-was-a-human-interface-designer-at-apple-2bc096895f8b" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/nbu.png">
+        <div class="layer">
+          <h3>Why User Focus Matters in UI/UX for the Next Billion Users</h3>
+          <p>Given the unique challenges of the NBU context, designers can create interfaces optimized for their target audience’s
+          needs, preferences, and behaviors.</p>
+          <a href="https://medium.com/@abishekgyawali04/why-focusing-on-the-user-is-most-important-during-the-ui-ux-design-for-the-next-billion-users-b2e7f1abc0b" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/gestalt.png">
+        <div class="layer">
+          <h3>Understanding the Power of Gestalt Principles in Design</h3>
+          <p>Designers should embrace Gestalt principles for valuable insights into human perception, creating effective and visually
+          captivating designs that efficiently communicate messages.</p>
+          <a href="https://medium.com/@abishekgyawali04/understanding-the-power-of-gestalt-principles-in-design-e73fd9fdc3b7" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn" id="see-more-blog">See More</a>
+  </div>
+</div>
+
+<!-----------------------Contact------------------>
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>abishekgyawali04@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i>5106771349</p>
+        <div class="social-icons">
+            <a href="https://dribbble.com/abishekgyawali04"><i class="fa-brands fa-dribbble"></i></i></a>
+            <a href="https://medium.com/@abishekgyawali04"><i class="fab fa-medium"></i></a>
+            <a href="https://www.linkedin.com/in/abishekgyawali/"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            
+        </div>
+        <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name ="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>With <i class ="fas fa-heart"></i> From Abishek</p>
+  </div>
+</div>
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+  }
+  for(tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<script>
+
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<!-- Pop-up HTML -->
+
+<div class="popup-overlay" id="popup-overlay">
+  <div class="popup-content">
+    <div id="popupimage"></div>
+    <div class="popup-text">
+      <h2 id="popup-title">Project Name</h2>
+      <p id="popup-description">Project Description</p>
+      <a href="#" id="popup-link" class="popup-link">Read More</a>
+    </div>
+    <span class="close-button" id="close-button" onclick="closePopup()">&times;</span>
+  </div>
+</div>
+
+
+<!-- <div class="popup-overlay" id="popup-overlay">
+  <div class="popup-content">
+    <div id="popupimage"></div>
+    <div class="popup-text">
+      <h2 id="popup-title" style="color: black;">Project Name</h2>
+      <p id="popup-description" style="color: black;">Project Description</p>
+      <a href="#" id="popup-link"><i class="fas fa-external-link-alt"></i> Read More</a>
+    </div>
+    <span class="close-button" id="close-button" onclick="closePopup()">&times;</span>
+  </div>
+</div> -->
+
+
+<!-- 
+<script>
+ // JavaScript for opening the pop-up
+  function openPopup(title, description, link) {
+    const overlay = document.getElementById("popup-overlay");
+    const popupTitle = document.getElementById("popup-title");
+    const popupDescription = document.getElementById("popup-description");
+    const popupLink = document.getElementById("popup-link");
+
+    // Set the content of the pop-up
+    popupTitle.textContent = "Project Name: " + title; // Add the project name
+    popupDescription.textContent = "Project Description: " + description; // Add the project description
+    popupLink.href = link;
+
+    // Disable scrolling on the body element
+    document.body.style.overflow = "hidden";
+
+    overlay.style.display = "block"; // Display the pop-up
+  }
+
+  // Close the pop-up when the close button is clicked
+  document.getElementById("close-button").addEventListener("click", function () {
+    // Re-enable scrolling on the body element
+    document.body.style.overflow = "auto";
+
+    document.getElementById("popup-overlay").style.display = "none";
+  });
+
+
+
+</script>  -->
+</body>
+</html>
