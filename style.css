@@ -502,7 +502,7 @@ nav .fas{
       top:0;
       right: -200px;
       width: 200px;
-      height:100vh;
+      height: 100vh;
       padding-top: 50px;
       z-index: 2;
       transition: right 0.5s;
@@ -537,10 +537,13 @@ nav .fas{
 
     .tab-links{
       font-size: 16px;
-      margin: 20px;
+      margin-right: 22px;
     }
 
     .contact-left, .contact-right {
       flex-basis: 100%;
+    }
+    .copyright{
+      font-size: 14px;
     }
 }
