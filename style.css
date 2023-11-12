@@ -21,7 +21,7 @@ body {
   background-position: center;
 }
 .container {
-  padding: 10px;
+  padding: 10px 10%;
 }
 
 nav{
@@ -482,6 +482,9 @@ nav .fas{
 @media only screen and (max-width: 600px) {
   #header {
     background-image: url(images/phone-background1.png);
+  }
+  .container {
+      padding: 10px;
   }
 
   .header-text {
