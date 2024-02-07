@@ -1,409 +1,491 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
-  <title>Abishek Gyawali Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="/images/AG.png">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/6176911f6a.js" crossorigin="anonymous"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Abishek Gyawali UI/UX Designer</title>
 </head>
+
 <body>
-  <script src="script.js"></script>
-<div id ="header">
-      <div class="container">
-        <nav>
-            <img src ="images/logo.png" class="logo">
-            <ul id="sidemenu">
-              <li><a href="#header">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">My Design Process</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="https://www.behance.net/gyawaliabishek">Designs</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <i class="fas fa-times" onclick="closemenu()"></i>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="index.html" class="nav__logo">Abishek</a>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="index.html" class="nav__link">Home</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="about.html" class="nav__link">About Me</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="work.html" class="nav__link">Portfolio</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="contact.html" class="button">Contact Me</a>
+               </li>
             </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <p>UI/UX Designer</p>
-          <h1>Hi, I am <span>Abishek Gyawali</span> an aspiring UI / UX designer with a passion <br>for creativity and innovation. 
-            Join me on this creative journey as we shape <br>the future with user-centric experiences. </h1>
-        </div>
-      </div>
-</div>
-<!----------------------ABOUT---------------- -->
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-        <img src="images/user_1.png">
-      </div>
-      <div class="about-col-2">
-        <h1 class="sub-title">About Me</h1>
-        <br>
-        <p><font size ="4">Hello, I'm Abishek, a California-based UX Designer with a passion for crafting exceptional digital experiences. My
-        journey includes honing my skills through Google's prestigious UX program, giving me expertise in illustrations, user
-        flows, wireframes, and more. I'm well-versed in design principles and proficient in tools like Figma, InDesign, Sketch,
-        and InVision. 
-        <br>
-        <br>
-        
-        My mission is simple: create innovative projects that weave compelling narratives while prioritizing the user. I value
-        teamwork, authenticity, and continual growth. Let's collaborate to make a meaningful impact through human-centered
-        design. Join me on this creative journey as we shape the future with user-centric experiences. No corporate jargon
-        here—just good design that resonates with people. 
-        <br>
-        <br>
-        My past experience lends me the ability to communicate effectively across multiple divisions and collaborate efficiently
-        in an agile working environment. That's why I would love to work with the next product team to design solutions that we
-        are all proud of. </font></p>
 
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links" onclick="opentab('experience')">Experience</p>
-          <p class="tab-links" onclick="opentab('education')">Education</p>
-          <p class="tab-links" onclick="opentab('tools')">Tools</p>
-        </div>
-        <div class="tab-contents active-tab" id="skills">
-          <ul>
-            <li><span>Research</span><br>Conducting User Research, Surverys, Interviews, Usability Testing</li>
-            <li><span>Information Architecture</span><br>Structuring and organizing content, ensuring local navigation</li>
-            <li><span>Wireframing and Prototyping</span><br>Creating Interactve Prototypes and Wireframes to visualize and iterate design concepts</li>
-            <li><span>Interaction Design (IxD)</span><br>Designing interactive elements and microinteractions that enhance functionality</li>
-            <li><span>Visual Communication</span><br>Conveyance of information through visual elements like images, graphics and design</li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="experience">
-          <ul>
-            <li><span>June 2021 - July 20222</span><br>UI / UX Designer at Jackson's Hardware Inc</li>
-            <li><span>March 2018 - Dec 2020</span><br>MultiMedia Designer at Lincoln University Oakland</li>
-            <li><span>Dec 2021 - Present</span><br>Co-Founder and CEO at Nepali Things LLC</li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="education">
-          <ul>
-            <li><span>2020 </span><br>MBA in Marketing From Lincoln University</li>
-            <li><span>2023</span><br>Google UX Design Certification</li>
-            <li><span>2020</span><br>Digital Marketing NanoDegree</li>
-            <li><span>2020</span><br>Python for Everybody Specialization</li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="tools">
-          <ul>
-            <li><span>Figma </span><br>Best for Prototyping</li>
-            <li><span>Adobe XD</span><br>Initial Concept for Digital Products</li>
-            <li><span>Sketch</span><br>Best for its ease and robust features</li>
-            <li><span>Overflow</span><br>Best for Flowcharts</li>
-            <li><span>UXCam</span><br>Best for User Testing</li>
-            <li><span>Balsamiq</span><br>Best for Wireframing</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
 
-<!----------my design process-------------- -->
-<div id="services">
-  <div class="container">
-    <h1 class="sub-title">My Design Process</h1>
-    <div class="services-list">
-      <div>
-        <i class="fas fa-1"></i>
-        <h2>Define the Requirements</h2>
-        <p>I kick things off by pinpointing the project's core business needs, nailing down requirements, and getting a grasp of
-        the desired outcomes, timelines, and team expectations. Keeping the lines of communication open with the team is
-        paramount. At this stage, I also begin sketching out initial thoughts on the puzzle we're about to solve.</p>
-        <!-- <a href="#">Learn More</a> -->
-      </div>
-      <div>
-        <i class="fas fa-2"></i>
-        <h2>Discover the Issues</h2>
-        <p>This is where I dive deep, collecting intel, engaging in discussions, and delving into the intricacies of the problem at
-        hand. I might sift through user feedback or investigate why the current design is the way it is. If we're short on
-        budget or time for a full-blown user research expedition, I'll go for informal interviews to avoid shooting in the dark.</p>
-        <!-- <a href="#">Learn More</a> -->
-      </div>
-      <div>
-        <i class="fas fa-3"></i>
-        <h2>Interpret the Results</h2>
-        <p>The decoding phase is when I define who our users are, what makes them tick, and where it hurts. I craft personas, chart
-        journey maps, sketch out storyboards, and whip up problem statements or refine existing ones. This is also the stage
-        where we set our project goals and the metrics we'll use to measure success. It's often an eye-opening journey.</p>
-        <!-- <a href="#">Learn More</a> -->
-      </div>
-      <div>
-        <i class="fas fa-4"></i>
-        <h2>Ideate over Solutions</h2>
-        <p>The ideation phase – my personal playground. I get everyone in on the brainstorming action: developers, fellow
-        designers, stakeholders, even the friendly neighborhood customer support team. We let the ideas flow freely, aiming for
-        quantity over quality at this stage</p>
-        <!-- <a href="#">Learn More</a> -->
-      </div>
-      <div>
-        <i class="fas fa-5"></i>
-        <h2>Prototype</h2>
-        <p>Now, it's time to give shape to those brilliant ideas. I create an interactive prototype, whether it's a snazzy
-        high-fidelity Figma masterpiece or a functional website, depending on the project's rhythm and testing needs.</p>
-        <!-- <a href="#">Learn More</a> -->
-      </div>
-      <div>
-        <i class="fas fa-6"></i>
-        <h2>Test, Iterate and Test Again</h2>
-        <p>In the final stretch, I put our prototype to the test with real users. Sometimes it's a swift, informal check, while
-        other times it's a full-blown usability testing extravaganza. The results serve as our guiding light, showing us what
-        needs fine-tuning and enhancing. It's all about iterating to perfection..</p>
-        <!-- <a href="#">Learn More</a> -->
-      </div>
-    </div>
-  </div>
-</div>
+         <div class="nav__actions">
+            <!-- Theme Button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-<!---------------portfolio---------------- -->
-  <div id="portfolio">
-    <div class="container">
-      <h1 class="sub-title">My Work</h1>
-      <div class="work-list">
-        <div class="work" onclick="openPopup(0)">
-          <img src="images/project1.png">
-          <div class="layer">
-            <h3>Web Design</h3>
-            <p>Website Design for an Event Management Company</p>
-          </div>
-        </div>
-        <div class="work" onclick="openPopup(1)">
-          <img src="images/Jacksons Design.png">
-          <div class="layer">
-            <h3>Jackson’s Hardware Website Redesign</h3>
-            <p>The primary goal was to make the website easy to understand, and navigate, and provide a positive user experience.</p>
-          </div>
-        </div>
-        <div class="work" onclick="openPopup(2)">
-          <img src="images/nepalithings.png">
-          <div class="layer">
-            <h3>A ticketing solution for movie lovers</h3>
-            <p>This movie ticketing app provides an intuitive user experience for purchasing tickets. With a clean, minimal interface,
-            the app puts the focus on finding and buying tickets easily.</p>
-          </div>
-        </div>
-        <div class="work" onclick="openPopup(3)">
-          <img src="images/work-1.png">
-          <div class="layer">
-            <h3>E-commerce</h3>
-            <p>This app allows you to buy something online with ease.</p>
-            <a href="#"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-        </div>
-        <!-- Add more projects here -->
-      </div>
-      <a href="#" class="btn" >See More</a>
-    </div>
-  </div>
- 
-<!---------------Blog---------------- -->
+            <!-- Toggle Button -->
 
-<div id="blog">
-  <div class="container">
-    <h1 class="sub-title">Blog</h1>
-    <div class="work-list">
-      <div class="work">
-        <img src="images/mobilevsweb.png">
-        <div class="layer">
-          <h3>Mobile Application Vs Website</h3>
-          <p>Despite functional similarities, the mobile application and website have notable differences.</p>
-          <a href="https://medium.com/@abishekgyawali04/mobile-application-vs-website-641666ad295c"
-            target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="images/uxandtechnical.png">
-        <div class="layer">
-          <h3>Balancing Creativity and Technical Constraints in UX Design</h3>
-          <p>Balancing creativity and technical constraints in UX designs is an ongoing journey. It is a challenging but essential
-          part of creating effective user experiences</p>
-          <a href="https://medium.com/@abishekgyawali04/balancing-creativity-and-technical-constraints-in-ux-design-f77314ec0bfa"
-            target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="images/appke.png">
-        <div class="layer">
-          <h3>What makes Apple’s UI/UX the most appealing to a majority of people?</h3>
-          <p>Apple’s user-centric philosophy and dedication to simplicity, aesthetics, and seamless user experiences make their UI/UX
-          highly appealing to mainstream consumers.</p>
-          <a href="https://medium.com/@abishekgyawali04/what-makes-apples-ui-ux-the-most-appealing-to-a-majority-of-people-eaec0612d01e" target="_blank"><i
-              class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="images/bias.png">
-        <div class="layer">
-          <h3>How to reduce bias in interviews?</h3>
-          <p>Taking deliberate steps to overcome biases will make your research findings more accurate and actionable.</p>
-          <a href="https://medium.com/@abishekgyawali04/how-to-reduce-bias-in-interviews-c52b64d6721c" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="images/human.png">
-        <div class="layer">
-          <h3>What if I was a Human Interface Designer at Apple?</h3>
-          <p>I have been a big fan of Apple since Apple launched its first product Apple I microcomputer in Steve Jobs’s Family
-          Garage</p>
-          <a href="https://medium.com/@abishekgyawali04/what-if-i-was-a-human-interface-designer-at-apple-2bc096895f8b" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="images/nbu.png">
-        <div class="layer">
-          <h3>Why User Focus Matters in UI/UX for the Next Billion Users</h3>
-          <p>Given the unique challenges of the NBU context, designers can create interfaces optimized for their target audience’s
-          needs, preferences, and behaviors.</p>
-          <a href="https://medium.com/@abishekgyawali04/why-focusing-on-the-user-is-most-important-during-the-ui-ux-design-for-the-next-billion-users-b2e7f1abc0b" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="images/gestalt.png">
-        <div class="layer">
-          <h3>Understanding the Power of Gestalt Principles in Design</h3>
-          <p>Designers should embrace Gestalt principles for valuable insights into human perception, creating effective and visually
-          captivating designs that efficiently communicate messages.</p>
-          <a href="https://medium.com/@abishekgyawali04/understanding-the-power-of-gestalt-principles-in-design-e73fd9fdc3b7" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-    </div>
-    <a href="#" class="btn" id="see-more-blog">See More</a>
-  </div>
-</div>
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-apps-2-line"></i>
+            </div>
+         </div>
+      </nav>
+   </header>
 
-<!-----------------------Contact------------------>
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section">
+         <div class="home__rectangle"></div>
 
-<div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
-        <p><i class="fas fa-paper-plane"></i>abishekgyawali04@gmail.com</p>
-        <p><i class="fas fa-phone-square-alt"></i></p>
-        <div class="social-icons">
-            <a href="https://dribbble.com/abishekgyawali04"><i class="fa-brands fa-dribbble"></i></i></a>
-            <a href="https://medium.com/@abishekgyawali04"><i class="fab fa-medium"></i></a>
-            <a href="https://www.linkedin.com/in/abishekgyawali/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.behance.net/gyawaliabishek"><i class="fa-brands fa-square-behance"></i></a>
+         <div class="home__container container grid">
+            <div class="home__perfil perfil">
+               <div class="perfil__content">
+                  <img src="assets/img/home-perfil.png" alt="image" class="perfil__img">
+               </div>
+
+            </div>
+            <div class="home__content grid">
+               <div class="home__data grid">
+                  <h1 class="home__name">Abishek Gyawali</h1>
+
+                  <h2 class="home__profession">Junior UI / UX Designer</h2>
+
+                  <div class="home__social">
+                     <a href="https://www.linkedin.com/in/abishekgyawali/" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                     </a>
+
+                     <a href="https://medium.com/@abishekgyawali04" target="_blank" class="home__social-link">
+                        <i class="ri-medium-fill"></i>
+                     </a>
+
+                     <a href="https://dribbble.com/abishekgyawali04" target="_blank" class="home__social-link">
+                        <i class="ri-dribbble-fill"></i>
+                     </a>
+
+                     <a href="https://www.behance.net/gyawaliabishek" target="_blank" class="home__social-link">
+                        <i class="ri-behance-fill"></i>
+                     </a>
+                  </div>
+               </div>
+               <a href="assets/pdf/Resume_Abishek_Gyawali.pdf" download="" class="home__button button">Download CV</a>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section">
+         <h2 class="section__title">
+            My Design <br>
+            Process
+         </h2>
+
+         <div class="services__container container grid">
+            <article class="services__card">
+               <i class="ri-number-1 services__icon"></i>
+               <h2 class="services__title">Define the Requirements</h2>
+               <p class="services__description">
+                  I kick things off by pinpointing the project's <b>core business needs</b>, writing down requirements,
+                  and getting a grasp of
+                  the desired outcomes, timelines, and team expectations. Keeping the lines of <b>communication</b> open
+                  with the team is
+                  major focus. At this stage, I also begin sketching out initial thoughts on the puzzle we're about to
+                  solve.
+               </p>
+               <button class="services__button button">Know More</button>
+
+               <div class="services__modal">
+                  <div class="services__modal-content">
+                     <i class="ri-close-line services__modal-close"></i>
+
+                     <h2 class="services__modal-title">Define the Requirements</h2>
+
+                     <ul class="services__modal-list grid">
+                        <li class="services__modal-item">
+                           I identify core business need with discovery sessions.
+                        </li>
+
+                        <li class="services__modal-item">
+                           I finalize the major requirements for the project.
+                        </li>
+
+                        <li class="services__modal-item">
+                           I get idea of desired outcomes, timelines, and team expectations.
+                        </li>
+
+                        <li class="services__modal-item">
+                           I keep on communicating as much as possible.
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-number-2 services__icon"></i>
+               <h2 class="services__title">Discover the Issues</h2>
+               <p class="services__description">
+                  This is where I dig deep, <b>gathering information,</b> having conversations, and exploring the
+                  details of the problem. I may
+                  go through <b>user feedback</b> or find out why the current design is the way it is. If we don't have
+                  enough money or time for
+                  a comprehensive user research trip, I'll opt for casual interviews to avoid making decisions without a
+                  clear
+                  understanding.
+               </p>
+               <button class="services__button button">Know More</button>
+               <div class="services__modal">
+                  <div class="services__modal-content">
+                     <i class="ri-close-line services__modal-close"></i>
+
+                     <h2 class="services__modal-title">Discover the Issues</h2>
+
+                     <ul class="services__modal-list grid">
+                        <li class="services__modal-item">
+                           I gather more information about the details of the problem.
+                        </li>
+
+                        <li class="services__modal-item">
+                           I conduct user feedback sessions.
+                        </li>
+
+                        <li class="services__modal-item">
+                           If required i will go for user interviews to dig deep in the design problem.
+                        </li>
+
+                        <li class="services__modal-item">
+                           I keep on communicating as much as possible.
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-number-3 services__icon"></i>
+               <h2 class="services__title">Interpret the Results</h2>
+               <p class="services__description">
+                  During the decoding phase, I figure out who our users are, what motivates them, and what challenges
+                  they face. I <b>create
+                     personas, map out their journeys, draw storyboards, and formulate problem statements,</b> either
+                  creating new ones or
+                  improving existing ones. This is also the time when we establish our <b>project goals</b> and the
+                  metrics to gauge our success.
+                  It's typically a revealing and enlightening process.
+               </p>
+               <button class="services__button button">Know More</button>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-number-4 services__icon"></i>
+               <h2 class="services__title">Ideate over Solutions</h2>
+               <p class="services__description">
+                  The ideation phase – my personal playground. I get everyone in on the brainstorming action:
+                  <b>developers, fellow
+                     designers, stakeholders, even the friendly neighborhood customer support team.</b> We let the ideas
+                  flow freely, aiming for
+                  quantity over quality at this stage.
+               </p>
+               <button class="services__button button">Know More</button>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-number-5 services__icon"></i>
+               <h2 class="services__title">Prototype</h2>
+               <p class="services__description">
+                  Now, it's the moment to turn those great ideas into reality. I build an interactive prototype, whether
+                  it's a polished
+                  <b>high-fidelity Figma design</b> or a <b>functional website,</b> based on the project's pace and
+                  testing requirements.
+               </p>
+               <button class="services__button button">Know More</button>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-number-6 services__icon"></i>
+               <h2 class="services__title">Test, Iterate and Test Again</h2>
+               <p class="services__description">
+                  In the last phase, I thoroughly test our <b>prototype with actual users</b>. It could be a quick and
+                  casual assessment or a
+                  comprehensive <b>usability testing</b>event. The outcomes act as our guiding beacon, revealing areas
+                  that require refinement
+                  and improvement. The key is to iterate and enhance until we achieve <b>perfection.</b>
+               </p>
+               <button class="services__button button">Know More</button>
+            </article>
+
+         </div>
+
+      </section>
+
+      <!--==================== WORK ====================-->
+      <section class="work section">
+         <h2 class="section__title">
+            My Most <br>
+            Recent Works and Blogs
+         </h2>
+
+         <div class="work__container container grid">
+
+            <article class="work__card">
+               <a href="https://medium.com/design-bootcamp/what-if-i-was-a-human-interface-designer-at-apple-2bc096895f8b"
+                  target="_blank" class="work__link">
+                  <img src="assets/img/apple.png" alt="image" class="work__img">
+                  <i class="ri-arrow-right-circle-line work__icon"></i>
+               </a>
             
-        </div>
-        <a href="images/Resume_Abishek_Gyawali.pdf" download class="btn btn2">Download Resume</a>
+               <h2 class="Wwork__title">What if I was a Human Interface Designer at Apple?</h2>
+               <span class="work__subtitle">This is just my opinion and many of these things are implemented and will be implemented in the near future. I am in no
+               way affiliated with Apple in any way.</span>
+            </article>
+
+            <article class="work__card">
+               <a href="https://bootcamp.uxdesign.cc/case-study-website-design-for-an-event-management-company-ef8f5ace15e"
+                  target="_blank" class="work__link">
+                  <img src="assets/img/work-1.png" alt="image" class="work__img">
+                  <i class="ri-arrow-right-circle-line work__icon"></i>
+               </a>
+
+               <h2 class="Wwork__title">Web Design</h2>
+               <span class="work__subtitle">Website Design for an Event Management Company</span>
+            </article>
+
+            <article class="work__card">
+               <a href="https://medium.com/@abishekgyawali04/case-study-jacksons-hardware-website-redesign-8fff51ad6453"
+                  target="_blank" class="work__link">
+                  <img src="assets/img/work-2.png" alt="image" class="work__img">
+                  <i class="ri-arrow-right-circle-line work__icon"></i>
+               </a>
+
+               <h2 class="Wwork__title">Jackson’s Hardware Website Redesign</h2>
+               <span class="work__subtitle">The primary goal was to make the website easy to understand, and navigate,
+                  and provide a positive user experience.</span>
+            </article>
+
+            <article class="work__card">
+               <a href="https://bootcamp.uxdesign.cc/case-study-a-ticketing-solution-for-movie-lovers-9cfdaa54e91d"
+                  target="_blank" class="work__link">
+                  <img src="assets/img/work-3.png" alt="image" class="work__img">
+                  <i class="ri-arrow-right-circle-line work__icon"></i>
+               </a>
+
+               <h2 class="Wwork__title">A ticketing solution for movie lovers</h2>
+               <span class="work__subtitle">This movie ticket app ensures a smooth and simple user experience for easy
+                  ticket purchase.</span>
+            </article>
+
+            <article class="work__card">
+               <a href="https://dribbble.com/shots/22698029-Admin-Dashboard"
+                  target="_blank" class="work__link">
+                  <img src="assets/img/work-7.png" alt="image" class="work__img">
+                  <i class="ri-arrow-right-circle-line work__icon"></i>
+               </a>
+
+               <h2 class="Wwork__title">Accounting Dashboard Design</h2>
+               <span class="work__subtitle">Accounting Dashboard designed to help individuals and businesses gain better
+                  control over their finances</span>
+            </article>
+
+            <article class="work__card">
+               <a href="https://dribbble.com/shots/22975792-Business-Listing-and-Event-Ticketing-UI-Redesign"
+                  target="_blank" class="work__link">
+                  <img src="assets/img/work-8.png" alt="image" class="work__img">
+                  <i class="ri-arrow-right-circle-line work__icon"></i>
+               </a>
+
+               <h2 class="Wwork__title">Business Listing and Event Ticketing UI Redesign</h2>
+               <span class="work__subtitle">New UI design concept and the landing page for Nepali Things LLC a leading
+                  ticket management company for Nepali Events</span>
+            </article>
+
+            <article class="work__card">
+               <a href="https://medium.com/@abishekgyawali04/exciting-news-unveiling-the-whitezone-website-redesign-8b23d9a77456"
+                  target="_blank" class="work__link">
+                  <img src="assets/img/work-4.png" alt="image" class="work__img">
+                  <i class="ri-arrow-right-circle-line work__icon"></i>
+               </a>
+
+               <h2 class="Wwork__title">Website Redesign for INGO</h2>
+               <span class="work__subtitle">As a UI/UX designer, taking on this project as my first has been an
+                  incredible learning experience, and I’m excited to
+                  showcase the transformation I’ve achieved</span>
+            </article>
+
+            <article class="work__card">
+               <a href="https://medium.com/design-bootcamp/balancing-creativity-and-technical-constraints-in-ux-design-f77314ec0bfa"
+                  target="_blank" class="work__link">
+                  <img src="assets/img/uxandtechnical.png" alt="image" class="work__img">
+                  <i class="ri-arrow-right-circle-line work__icon"></i>
+               </a>
+            
+               <h2 class="Wwork__title">Balancing Creativity and Technical Constraints in UX Design</h2>
+               <span class="work__subtitle">When we say balancing technical constraints in UX design, it is not about sacrificing
+                  creativity, it is about harnessing
+                  difficulty to overcome technical challenges and creating exceptional user experiences.</span>
+            </article>
+         </div>
+
+      </section>
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section">
+         <h2 class="section__title">
+            What They Say <br>
+            About Me?
+         </h2>
+
+         <div class="testimonial__container container">
+            <div class="testimonial__swiper swiper">
+               <div class="swiper-wrapper">
+                  <article class="testimonial__card swiper-slide">
+                     <div class="testimonial__border">
+                        <img src="assets/img/Rajesh-Thapa.jpg" alt="image" class="testimonial__img">
+                     </div>
+                     <h2 class="testimonial__name">Rajesh Thapa</h2>
+                     <p class="testimonial__description">
+                        Working with Abishek was a game-changer for our app design. His fresh perspective and attention to detail
+                        brought our vision to life. The result? An intuitive and visually stunning app that our users love! Looking forward to
+                        more collaborations. 
+                     </p>
+                  </article>
+
+                  <article class="testimonial__card swiper-slide">
+                     <div class="testimonial__border">
+                        <img src="assets/img/testimonial-3.png" alt="image" class="testimonial__img">
+                     </div>
+                     <h2 class="testimonial__name">Carolyn Emge</h2>
+                     <p class="testimonial__description">
+                        "Abishek exceeded our expectations with a complete website redesign and exceptional social media graphics.
+                        His expertise on subject matter transformed our online presence, while the eye-catching banners and posters enhanced our marketing
+                        efforts significantly. Professional, creative, and results-driven – I highly recommend Abishek for a seamless
+                        blend of design and impact."
+                     </p>
+                  </article>
+
+                  <article class="testimonial__card swiper-slide">
+                     <div class="testimonial__border">
+                        <img src="assets/img/Nayana.jpg" alt="image" class="testimonial__img">
+                     </div>
+                     <h2 class="testimonial__name">Nayana Upadhyay</h2>
+                     <p class="testimonial__description">
+                        "Studying under Abishek has been a transformative experience. His unique approach of explaining concepts
+                        through art and design not only made learning UI/UX and graphics design enjoyable but also immensely easier to grasp.
+                        Each session felt like a creative journey, translating complex ideas into visual masterpieces. Grateful for
+                        the knowledge and artistic perspective gained under their guidance."
+                     </p>
+                  </article>
+
+               </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section">
+         <div class="contact__container container grid">
+            <h2 class="section__title">
+               Let's Talk <br>
+               About Next Project
+            </h2>
+
+            <a href="contact.html" class="contact__button button">Contact Me</a>
+         </div>
+         
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div class="footer__content grid">
+            <a href="index.html" class="footer__logo">Abishek</a>
+
+            <ul class="footer__links">
+               <li>
+                  <a href="about.html" class="footer__link">About Me</a>
+               </li>
+
+               <li>
+                  <a href="work.html" class="footer__link">Portfolio</a>
+               </li>
+
+               <li>
+                  <a href="contact.html" class="footer__link">Contact Me</a>
+               </li>
+            </ul>
+            <div class="footer__social">
+               <a href="https://www.linkedin.com/in/abishekgyawali/" target="_blank" class="footer__social-link">
+                  <i class="ri-linkedin-box-fill"></i>
+               </a>
+
+               <a href="https://medium.com/@abishekgyawali04" target="_blank" class="footer__social-link">
+                  <i class="ri-medium-fill"></i>
+               </a>
+
+               <a href="https://dribbble.com/abishekgyawali04" target="_blank" class="footer__social-link">
+                  <i class="ri-dribbble-line"></i>
+               </a>
+
+               <a href="https://www.behance.net/gyawaliabishek" target="_blank" class="footer__social-link">
+                  <i class="ri-behance-fill"></i>
+               </a>
+            </div>
+         </div>
+         <span class="footer__copy">
+            &#169; Abishek Gyawali
+         </span>
       </div>
-      <div class="contact-right">
-        <!-- <form>
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email" placeholder="Your Email" required>
-          <textarea name ="Message" rows="6" placeholder="Your Message"></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
-        </form> -->
-        <div data-tf-widget="XT1Eqaz8" data-tf-opacity="100" data-tf-iframe-props="title=Abishek Gyawali"
-          data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div>
-        <script src="//embed.typeform.com/next/embed.js"></script>
-      </div>
-    </div>
-  </div>
-  <div class="copyright">
-    <p>With <i class ="fas fa-heart"></i> From Abishek</p>
-  </div>
-</div>
+   </footer>
 
-<script>
-
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
-
-function opentab(tabname){
-  for(tablink of tablinks){
-    tablink.classList.remove("active-link");
-  }
-  for(tabcontent of tabcontents) {
-    tabcontent.classList.remove("active-tab");
-  }
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabname).classList.add("active-tab");
-}
-
-</script>
-
-<script>
-
-  var sidemenu = document.getElementById("sidemenu");
-
-  function openmenu(){
-    sidemenu.style.right = "0";
-  }
-
-  function closemenu() {
-      sidemenu.style.right = "-200px";
-    }
-
-</script>
-
-<!-- Pop-up HTML -->
-
-<div class="popup-overlay" id="popup-overlay">
-  <div class="popup-content">
-    <div id="popupimage"></div>
-    <div class="popup-text">
-      <h2 id="popup-title">Project Name</h2>
-      <p id="popup-description">Project Description</p>
-      <a href="#" id="popup-link" class="popup-link" target="_blank">Read More</a>
-    </div>
-    <span class="close-button" id="close-button" onclick="closePopup()">&times;</span>
-  </div>
-</div>
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+   </a>
 
 
-<!-- <div class="popup-overlay" id="popup-overlay">
-  <div class="popup-content">
-    <div id="popupimage"></div>
-    <div class="popup-text">
-      <h2 id="popup-title" style="color: black;">Project Name</h2>
-      <p id="popup-description" style="color: black;">Project Description</p>
-      <a href="#" id="popup-link"><i class="fas fa-external-link-alt"></i> Read More</a>
-    </div>
-    <span class="close-button" id="close-button" onclick="closePopup()">&times;</span>
-  </div>
-</div> -->
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
 
+   <!--=============== SWIPER JS ===============-->
+   <script src="assets/js/swiper-bundle.min.js"></script>
 
-<!-- 
-<script>
- // JavaScript for opening the pop-up
-  function openPopup(title, description, link) {
-    const overlay = document.getElementById("popup-overlay");
-    const popupTitle = document.getElementById("popup-title");
-    const popupDescription = document.getElementById("popup-description");
-    const popupLink = document.getElementById("popup-link");
-
-    // Set the content of the pop-up
-    popupTitle.textContent = "Project Name: " + title; // Add the project name
-    popupDescription.textContent = "Project Description: " + description; // Add the project description
-    popupLink.href = link;
-
-    // Disable scrolling on the body element
-    document.body.style.overflow = "hidden";
-
-    overlay.style.display = "block"; // Display the pop-up
-  }
-
-  // Close the pop-up when the close button is clicked
-  document.getElementById("close-button").addEventListener("click", function () {
-    // Re-enable scrolling on the body element
-    document.body.style.overflow = "auto";
-
-    document.getElementById("popup-overlay").style.display = "none";
-  });
-
-
-
-</script>  -->
+   <!--=============== INDEX JS ===============-->
+   <script src="assets/js/index.js"></script>
 </body>
+
 </html>
