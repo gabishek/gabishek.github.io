@@ -561,6 +561,19 @@ body.dark-theme {
   row-gap: 2rem;
 }
 
+.featured-label {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.work__card {
+  margin-top: 1.25rem;
+}
+
 .work__link{
   display: inline-block;
   position: relative;
